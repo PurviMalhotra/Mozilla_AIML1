@@ -1,7 +1,8 @@
 # Rental Price Prediction & Sentiment Analysis Models
 1.Rental Price Prediction
-#intoduction
-....
+## Intoduction
+
+This project aims to perform data visualization and generate key insights from a given dataset. Additionally, a machine learning model is developed on Random Forest algorithm to predict rental prices based on various features such as location, property size, number of bedrooms, and amenities.
 
 ## Key Skills
 - Python
@@ -28,9 +29,43 @@ pip install matplotlib
 pip install seaborn
 pip install streamlit
 ```
-## Outcome
--EDA visualizations saved as PNG files in your working directory
--A trained Random Forest model saved as random_forest_rental_model.pkl
--Feature importance analysis showing which factors most affect rental prices
--Example prediction using a sample property from your dataset
--Insights and recommendations based on the analysis
+## Project Workflow
+1.Data Exploration & EDA:Conduct Exploratory Data Analysis (EDA) to identify trends, correlations, and anomalies.
+
+2.Data Visualization:
+
+- Rental Price Distribution: Understand the overall pricing trend.
+
+- Feature Correlation: Analyze how rental prices correlate with factors like location, property size, and amenities.
+
+- Geographic rent variations
+
+3.Preprocess the dataset:
+- Data Preprocessing
+
+- Handle missing data using imputation techniques.
+
+- Normalize numerical features for better model performance.
+
+- Encode categorical features using One-Hot Encoding or Label Encoding.
+
+- Split the dataset into training and testing sets.
+
+4. Model Training & Evaluation
+- Using Random Forest model
+- Train models and fine-tune hyperparameters.
+- Evaluate model performance using metrics such as RMSE, MAE, and R-squared.
+- Interpret model results and provide actionable insights based on findings.
+
+5. Insights & Interpretation
+- Identify key drivers of rental price variations.
+- Provide actionable insights to stakeholders.
+- Discuss model insights and recommendations.
+  
+## Usage
+
+1. Load the dataset.
+2. Run the EDA and visualization scripts.
+3. Preprocess the dataset.
+4.Train and evaluate the machine learning model.
+5.Generate insights and recommendations.
