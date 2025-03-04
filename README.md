@@ -2,7 +2,8 @@
 1.Rental Price Prediction
 #intoduction
 ....
-##Key Skills
+
+## Key Skills
 - Python
 - Numpy
 - Matplotlib
