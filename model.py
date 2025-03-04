@@ -342,40 +342,31 @@ def generate_insights(feature_importance_df):
     top_features = feature_importance_df.head(10)['Feature'].tolist()
     
     print("Key Insights from Random Forest Model:")
-    print(f"1. The model identified these as the top factors affecting rental prices: {', '.join(top_features[:5])}")
-    print("2. The Random Forest model can explain rental price variations with good accuracy")
-    print("3. Property characteristics have a stronger impact than individual amenities")
-    print("4. There are clear price tiers based on property configurations")
-    print("5. Security deposit amounts are strongly correlated with rental prices")
+    print(f"1.The model identified these as the top factors affecting rental prices: {', '.join(top_features[:5])}")
+    print("2.The Random Forest model can explain rental price variations with good accuracy")
+    print("3.Property characteristics have a stronger impact than individual amenities")
     
     print("\nRecommendations:")
-    print("1. For property owners: Focus on improving the highest-impact features to maximize rental income")
-    print("2. For property managers: Use the prediction model to ensure properties are priced competitively")
-    print("3. For renters: Consider trade-offs between price-driving amenities based on personal priorities")
-    print("4. For investors: Target properties where adding high-impact amenities could significantly increase rental yield")
-    print("5. For market analysis: Use the model to identify over-priced and under-priced properties")
+    print("1.Property owners should focus on improving the highest-impact features to maximize rental income")
+    print("2.Property managers can use the prediction model to ensure properties are priced competitively")
+    print("3.Renters should consider trade-offs between price-driving amenities based on personal priorities")
+    print("4.Investers should consider targeting properties where adding high-impact amenities could significantly increase rental yield")
+    print("5.For the purpose of market analysis,use the model to identify over-priced and under-priced properties")
+
 
 #main
-
-#run the entire pipeline
 print("Starting rental price prediction analysis with Random Forest model...\n")
 
-#EDA
 df = perform_eda(df)
 
-#Preprocess the data
 X_train, X_test, y_train, y_test, preprocessor = preprocess_data(df)
 
-#Train rf model
 rf_pipeline = train_and_evaluate_random_forest(X_train, X_test, y_train, y_test, preprocessor)
 
-#Analyze feature importance
 feature_importance_df = analyze_feature_importance(rf_pipeline, X_train)
 
-#Save model and create prediction function
 predict_function = save_model_and_create_predictor(rf_pipeline)
 
-#Generate insights and recommendations
 generate_insights(feature_importance_df)
 
 print("\nAnalysis Complete\n")
