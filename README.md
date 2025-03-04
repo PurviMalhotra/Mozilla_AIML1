@@ -21,7 +21,6 @@ To run this project, you need to install the following packages:
 ```python
 pip install numpy
 pip install pandas
-pip install psycopg2
 pip install scikit-learn==3.5.0
 pip install xgboost
 pip install plotly
@@ -93,7 +92,6 @@ To run this project, you need to install the following packages:
 ```python
 pip install numpy
 pip install pandas
-pip install psycopg2
 pip install scikit-learn==3.5.0
 pip install xgboost
 pip install plotly
