@@ -66,8 +66,8 @@ pip install streamlit
 1. Load the dataset.
 2. Run the EDA and visualization scripts.
 3. Preprocess the dataset.
-4.Train and evaluate the machine learning model.
-5.Generate insights and recommendations.
+4. Train and evaluate the machine learning model.
+5. Generate insights and recommendations.
 
 
 ## 2.Sentiment Analysis Model
